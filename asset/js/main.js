@@ -5,7 +5,7 @@ $(document).ready(function(){
     yourHeader = $('header').height();
 
     $(window).scroll(function() {
-        if( $(this).scrollTop() > yourHeader ) {
+        if( $(this).scrollTop() > 0 ) {
             yourNavigation.addClass(stickyDiv);
             if(window.innerWidth <= 1024){
                 $(".nav").addClass("scrolled");
@@ -16,6 +16,11 @@ $(document).ready(function(){
                 $(".nav").removeClass("scrolled");
             }
         }
+    });
+
+    $(".burger").click(function(){
+      $(".menu").toggleClass("show");
+      $($(this).children("i")).toggleClass("fa-bars fa-times");
     });
 
     var addClassOnScroll = function () {
