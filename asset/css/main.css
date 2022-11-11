@@ -939,4 +939,8 @@ section.copy p{
     .col-xs-6{
         width: 50%;
     }
+
+    .page-cover h2{
+        font-size: 32px;
+    }
 }
