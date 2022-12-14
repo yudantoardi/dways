@@ -611,6 +611,25 @@ header.scrolled .burger{
     margin: 0 5px;
     color: rgba(255,255,255,0.6);
 }
+.page-cover.work{
+    height: 720px;
+    padding-top: 280px;
+}
+.page-cover.work figure{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0.5;
+}
+.page-cover.work figure img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 
 .blogs .blog-card{
     margin-bottom: 20px;
@@ -749,6 +768,36 @@ header.scrolled .burger{
 }
 .blog-card-2 .text .meta-info i{
     margin-right: 8px;
+}
+
+.dt-work .article{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+.dt-work .article h1{
+    font-size: 48px;
+}
+
+.work-result{
+    background: rgba(0,0,0,0.2);
+}
+
+.result-card{
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.result-card h3{
+    font-size: 36px;
+    color: #FFD000;
+}
+.result-card span{
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
 }
 
 @media only screen and (max-width:1024px){
